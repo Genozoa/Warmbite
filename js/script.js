@@ -2,6 +2,21 @@
 const hamburgerMenu = document.getElementById('hamburgerMenu');
 const navMenu = document.getElementById('navMenu');
 
+if (hamburgerMenu) {
+    hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburgerMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
 const foodDetails = {
     'product-1': {
         image: 'public/product-1.png',
@@ -248,19 +263,6 @@ if (foodModal) {
         }
     });
 }
-
-hamburgerMenu.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Close menu when a link is clicked
-document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburgerMenu.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-});
 
 // ===== STICKY HEADER ON SCROLL =====
 const header = document.querySelector('.header');
