@@ -4,168 +4,163 @@ const navMenu = document.getElementById('navMenu');
 
 const foodDetails = {
     'product-1': {
-        image: 'public/product-1.jpg',
-        title: 'Garden Harvest Bowl',
-        tags: ['Veggie-Forward', 'Dairy-Free', 'Gluten-Free Friendly', 'Ready in 10 min'],
-        calories: '480 cal',
+        image: 'public/product-1.png',
+        title: 'Chicken Sopas',
+        tags: ['Comforting', 'Creamy', 'Family-Friendly', 'Ready in 5 min'],
+        calories: '420 cal',
         heatTime: '4 min',
-        description: 'A fresh bowl packed with crisp vegetables, herbs, and a bright dressing for a wholesome lunch.',
-        ingredients: ['Roasted vegetables', 'Baby greens', 'Herbed quinoa', 'Citrus dressing', 'Avocado', 'Pumpkin seeds'],
+        netWeight: '350g',
+        description: 'Comforting creamy chicken soup with macaroni, cabbage, and carrots for a familiar, cozy meal.',
+        ingredients: ['Chicken', 'Macaroni', 'Cabbage', 'Carrot', 'Onion', 'Garlic', 'Evaporated Milk', 'Fish Sauce', 'Salt', 'Pepper', 'Water'],
         nutrition: [
-            { label: 'Protein', value: '18g' },
-            { label: 'Fiber', value: '10g' },
-            { label: 'Carbs', value: '28g' },
-            { label: 'Fat', value: '14g' }
-        ]
-    },
-    'product-2': {
-        image: 'public/product-2.jpg',
-        title: 'Mediterranean Herb Plate',
-        tags: ['High Protein', 'Paleo', 'Soy-Free', 'Ready in 6 min'],
-        calories: '560 cal',
-        heatTime: '5 min',
-        description: 'A savory plate with herbs, roasted vegetables, and a satisfying Mediterranean finish.',
-        ingredients: ['Herb chicken', 'Roasted cauliflower', 'Cucumber', 'Olive relish', 'Tahini drizzle', 'Lemon'],
-        nutrition: [
-            { label: 'Protein', value: '31g' },
-            { label: 'Fiber', value: '8g' },
-            { label: 'Carbs', value: '22g' },
-            { label: 'Fat', value: '18g' }
-        ]
-    },
-    'product-3': {
-        image: 'public/product-3.jpg',
-        title: 'Citrus Chicken Bento',
-        tags: ['Fresh & Vibrant', 'Gluten-Free Friendly', 'Dairy-Free', 'Ready in 5 min'],
-        calories: '520 cal',
-        heatTime: '4 min',
-        description: 'A bright, balanced bento with citrus chicken and crisp vegetables for a light meal.',
-        ingredients: ['Citrus chicken', 'Cucumber ribbons', 'Roasted carrots', 'Baby greens', 'Avocado', 'Lemon dressing'],
-        nutrition: [
-            { label: 'Protein', value: '29g' },
-            { label: 'Fiber', value: '7g' },
-            { label: 'Carbs', value: '20g' },
-            { label: 'Fat', value: '16g' }
-        ]
-    },
-    'product-4': {
-        image: 'public/product-4.jpg',
-        title: 'Roasted Veggie Box',
-        tags: ['Plant-Based', 'Fiber-Rich', 'Ready in 8 min'],
-        calories: '460 cal',
-        heatTime: '6 min',
-        description: 'A cozy veggie box featuring roasted vegetables with a rich and satisfying sauce.',
-        ingredients: ['Roasted squash', 'Carrots', 'Broccolini', 'Chickpeas', 'Herb sauce', 'Olive oil'],
-        nutrition: [
-            { label: 'Protein', value: '16g' },
-            { label: 'Fiber', value: '12g' },
-            { label: 'Carbs', value: '30g' },
-            { label: 'Fat', value: '13g' }
-        ]
-    },
-    'product-5': {
-        image: 'public/product-5.jpg',
-        title: 'Protein Power Bowl',
-        tags: ['High Protein', 'Carb-Conscious', 'Soy-Free', 'Ready in 7 min'],
-        calories: '590 cal',
-        heatTime: '5 min',
-        description: 'A filling bowl with protein-rich components and a clean, bright finish.',
-        ingredients: ['Grilled chicken', 'Quinoa', 'Steamed greens', 'Roasted peppers', 'Tahini', 'Cucumber'],
-        nutrition: [
-            { label: 'Protein', value: '35g' },
-            { label: 'Fiber', value: '9g' },
-            { label: 'Carbs', value: '24g' },
-            { label: 'Fat', value: '19g' }
-        ]
-    },
-    'product-6': {
-        image: 'public/product-6.jpg',
-        title: 'Fresh Greens Wrap',
-        tags: ['Light', 'Gluten-Free Friendly', 'Dairy-Free', 'Ready in 5 min'],
-        calories: '440 cal',
-        heatTime: '3 min',
-        description: 'A crisp wrap filled with fresh greens and a light herb dressing for easy meals.',
-        ingredients: ['Leafy greens', 'Herbed chicken', 'Cucumber', 'Radish', 'Dijon dressing', 'Wrap'],
-        nutrition: [
-            { label: 'Protein', value: '24g' },
-            { label: 'Fiber', value: '6g' },
-            { label: 'Carbs', value: '18g' },
+            { label: 'Protein', value: '22g' },
+            { label: 'Fiber', value: '4g' },
+            { label: 'Carbs', value: '36g' },
             { label: 'Fat', value: '12g' }
         ]
     },
-    'product-7': {
-        image: 'public/product-7.jpg',
-        title: 'Smoky Tomato Pasta',
-        tags: ['Comfort Food', 'Family Friendly', 'Ready in 12 min'],
-        calories: '610 cal',
-        heatTime: '8 min',
-        description: 'A comforting pasta with roasted tomato flavor and a satisfying savory finish.',
-        ingredients: ['Pasta', 'Smoky tomato sauce', 'Spinach', 'Parmesan', 'Basil', 'Olive oil'],
+    'product-2': {
+        image: 'public/product-2.png',
+        title: 'Champorado',
+        tags: ['Breakfast', 'Creamy', 'Chocolatey', 'Ready in 4 min'],
+        calories: '360 cal',
+        heatTime: '3 min',
+        netWeight: '300g',
+        description: 'Creamy chocolate rice porridge made with glutinous rice, cocoa, and a hint of salt.',
+        ingredients: ['Glutinous Rice', 'Cocoa Powder', 'Brown Sugar', 'Coconut Milk Powder', 'Milk Powder', 'Salt', 'Water', 'Vanilla'],
         nutrition: [
-            { label: 'Protein', value: '22g' },
-            { label: 'Fiber', value: '7g' },
-            { label: 'Carbs', value: '35g' },
-            { label: 'Fat', value: '15g' }
+            { label: 'Protein', value: '8g' },
+            { label: 'Fiber', value: '3g' },
+            { label: 'Carbs', value: '48g' },
+            { label: 'Fat', value: '9g' }
         ]
     },
-    'product-8': {
-        image: 'public/product-8.jpg',
-        title: 'Creamy Mushroom Rice',
-        tags: ['Comforting', 'Vegetarian', 'Hearty', 'Ready in 9 min'],
-        calories: '550 cal',
-        heatTime: '7 min',
-        description: 'A velvety rice bowl with mushrooms and herbs for a cozy, satisfying meal.',
-        ingredients: ['Mushrooms', 'Rice', 'Creamy sauce', 'Peas', 'Parsley', 'Shallots'],
+    'product-3': {
+        image: 'public/product-3.png',
+        title: 'Chicken Lugaw',
+        tags: ['Soothing', 'Savory', 'Slow-Cooked', 'Ready in 5 min'],
+        calories: '390 cal',
+        heatTime: '4 min',
+        netWeight: '350g',
+        description: 'Comforting chicken rice porridge slow-cooked with ginger and garlic for a wholesome breakfast.',
+        ingredients: ['Chicken', 'Rice', 'Ginger', 'Garlic', 'Onion', 'Spring Onion', 'Fish Sauce', 'Salt', 'Pepper', 'Water'],
         nutrition: [
-            { label: 'Protein', value: '17g' },
-            { label: 'Fiber', value: '6g' },
-            { label: 'Carbs', value: '32g' },
+            { label: 'Protein', value: '20g' },
+            { label: 'Fiber', value: '2g' },
+            { label: 'Carbs', value: '44g' },
+            { label: 'Fat', value: '10g' }
+        ]
+    },
+    'product-4': {
+        image: 'public/product-4.png',
+        title: 'Chicken Curry with Rice',
+        tags: ['Warming', 'Hearty', 'Savory', 'Ready in 5 min'],
+        calories: '510 cal',
+        heatTime: '5 min',
+        netWeight: '350g',
+        description: 'Tender chicken simmered in a flavorful curry with potatoes and carrots, served with rice.',
+        ingredients: ['Chicken', 'Curry Powder', 'Coconut Milk', 'Potato', 'Carrot', 'Onion', 'Garlic', 'Fish Sauce', 'Salt', 'Pepper', 'Water'],
+        nutrition: [
+            { label: 'Protein', value: '24g' },
+            { label: 'Fiber', value: '5g' },
+            { label: 'Carbs', value: '45g' },
+            { label: 'Fat', value: '16g' }
+        ]
+    },
+    'product-5': {
+        image: 'public/product-5.png',
+        title: 'Beef Tapa with Garlic Rice',
+        tags: ['Protein-Rich', 'Savory', 'Filling', 'Ready in 6 min'],
+        calories: '560 cal',
+        heatTime: '5 min',
+        netWeight: '380g',
+        description: 'Marinated beef tapa served with flavorful garlic rice and crispy garlic bits.',
+        ingredients: ['Beef', 'Rice', 'Soy Sauce', 'Calamansi', 'Garlic', 'Brown Sugar', 'Black Pepper', 'Cooking Oil', 'Salt', 'Fried Garlic'],
+        nutrition: [
+            { label: 'Protein', value: '29g' },
+            { label: 'Fiber', value: '3g' },
+            { label: 'Carbs', value: '48g' },
             { label: 'Fat', value: '18g' }
         ]
     },
-    'product-9': {
-        image: 'public/product-9.jpg',
-        title: 'Crispy Chicken Salad',
-        tags: ['Crisp', 'Protein-Rich', 'Gluten-Free Friendly', 'Ready in 5 min'],
+    'product-6': {
+        image: 'public/product-6.png',
+        title: 'Chicken Afritada with Rice',
+        tags: ['Tomato-Rich', 'Comforting', 'Family-Style', 'Ready in 5 min'],
         calories: '500 cal',
-        heatTime: '4 min',
-        description: 'A crisp salad with crunchy chicken and a bright dressing for a refreshing meal.',
-        ingredients: ['Crispy chicken', 'Mixed greens', 'Cucumber', 'Radish', 'Herb dressing', 'Seeds'],
+        heatTime: '5 min',
+        netWeight: '380g',
+        description: 'Tender chicken simmered in a rich tomato sauce with potatoes, carrots, and bell peppers.',
+        ingredients: ['Chicken', 'Rice', 'Tomato Sauce', 'Potato', 'Carrot', 'Bell Pepper', 'Onion', 'Soy Sauce', 'Garlic', 'Bay Leaf', 'Sugar', 'Cooking Oil', 'Salt', 'Black Pepper'],
         nutrition: [
-            { label: 'Protein', value: '28g' },
-            { label: 'Fiber', value: '5g' },
-            { label: 'Carbs', value: '16g' },
-            { label: 'Fat', value: '15g' }
+            { label: 'Protein', value: '25g' },
+            { label: 'Fiber', value: '6g' },
+            { label: 'Carbs', value: '44g' },
+            { label: 'Fat', value: '14g' }
         ]
     },
-    'product-10': {
-        image: 'public/product-10.jpg',
-        title: 'Sunshine Quinoa Bowl',
-        tags: ['Nutrient-Rich', 'Plant-Based', 'Dairy-Free', 'Ready in 6 min'],
-        calories: '470 cal',
+    'product-7': {
+        image: 'public/product-7.png',
+        title: 'Beef Mami Noodle Soup',
+        tags: ['Warming', 'Savory', 'Hearty', 'Ready in 5 min'],
+        calories: '480 cal',
         heatTime: '4 min',
-        description: 'A sunny bowl of quinoa, roasted vegetables, and fresh herbs with bright flavor.',
-        ingredients: ['Quinoa', 'Roasted peppers', 'Cucumber', 'Herbs', 'Tahini', 'Lemon'],
+        netWeight: '300g',
+        description: 'Tender beef slices in a savory noodle soup with greens, garlic, and onions.',
+        ingredients: ['Beef', 'Noodles', 'Water', 'Salt', 'Beef Broth', 'Soy Sauce', 'Garlic', 'Onion', 'Ginger', 'Sugar', 'Black Pepper', 'Cooking Oil', 'Bok Choy', 'Spring Onion'],
         nutrition: [
-            { label: 'Protein', value: '15g' },
-            { label: 'Fiber', value: '8g' },
-            { label: 'Carbs', value: '29g' },
+            { label: 'Protein', value: '23g' },
+            { label: 'Fiber', value: '4g' },
+            { label: 'Carbs', value: '42g' },
             { label: 'Fat', value: '13g' }
         ]
     },
-    'product-11': {
-        image: 'public/product-11.jpg',
-        title: 'Balanced Bento Box',
-        tags: ['Balanced', 'Portable', 'Ready to Eat', 'Ready in 3 min'],
-        calories: '510 cal',
-        heatTime: '3 min',
-        description: 'A practical bento featuring a balanced mix of proteins, grains, and fresh produce.',
-        ingredients: ['Chicken', 'Rice', 'Cucumber', 'Carrots', 'Hummus', 'Herbed greens'],
+    'product-8': {
+        image: 'public/product-8.png',
+        title: 'Pork Menudo with Rice',
+        tags: ['Rich', 'Savory', 'Hearty', 'Ready in 5 min'],
+        calories: '530 cal',
+        heatTime: '5 min',
+        netWeight: '350g',
+        description: 'Savory pork simmered in a rich tomato sauce with potatoes and carrots.',
+        ingredients: ['Pork', 'Tomato Sauce', 'Potato', 'Carrot', 'Onion', 'Garlic', 'Soy Sauce', 'Bay Leaf', 'Sugar', 'Salt', 'Pepper', 'Cooking Oil', 'Water'],
         nutrition: [
-            { label: 'Protein', value: '27g' },
-            { label: 'Fiber', value: '7g' },
-            { label: 'Carbs', value: '25g' },
-            { label: 'Fat', value: '14g' }
+            { label: 'Protein', value: '26g' },
+            { label: 'Fiber', value: '5g' },
+            { label: 'Carbs', value: '43g' },
+            { label: 'Fat', value: '16g' }
+        ]
+    },
+    'product-9': {
+        image: 'public/product-9.png',
+        title: 'Pork Adobo',
+        tags: ['Classic', 'Savory', 'Garlicky', 'Ready in 5 min'],
+        calories: '510 cal',
+        heatTime: '4 min',
+        netWeight: '350g',
+        description: 'Tender pork simmered in a savory soy-vinegar garlic sauce.',
+        ingredients: ['Pork', 'Soy Sauce', 'Vinegar', 'Garlic', 'Bay Leaf', 'Black Pepper', 'Water', 'Sugar', 'Cooking Oil', 'Salt'],
+        nutrition: [
+            { label: 'Protein', value: '24g' },
+            { label: 'Fiber', value: '2g' },
+            { label: 'Carbs', value: '8g' },
+            { label: 'Fat', value: '20g' }
+        ]
+    },
+    'product-10': {
+        image: 'public/product-10.png',
+        title: 'Adobo with Rice',
+        tags: ['Comforting', 'Savory', 'Filling', 'Ready in 5 min'],
+        calories: '490 cal',
+        heatTime: '4 min',
+        netWeight: '400g',
+        description: 'Tender chicken simmered in a savory soy-vinegar garlic sauce, served with rice.',
+        ingredients: ['Chicken', 'Soy Sauce', 'Vinegar', 'Garlic', 'Bay Leaf', 'Black Pepper', 'Water', 'Sugar', 'Cooking Oil', 'Salt'],
+        nutrition: [
+            { label: 'Protein', value: '26g' },
+            { label: 'Fiber', value: '3g' },
+            { label: 'Carbs', value: '41g' },
+            { label: 'Fat', value: '15g' }
         ]
     }
 };
@@ -176,6 +171,7 @@ const foodModalTitle = document.getElementById('foodModalTitle');
 const foodModalTags = document.getElementById('foodModalTags');
 const foodModalCalories = document.getElementById('foodModalCalories');
 const foodModalHeatTime = document.getElementById('foodModalHeatTime');
+const foodModalNetWeight = document.getElementById('foodModalNetWeight');
 const foodModalDescription = document.getElementById('foodModalDescription');
 const foodModalIngredients = document.getElementById('foodModalIngredients');
 const foodModalNutrition = document.getElementById('foodModalNutrition');
@@ -195,6 +191,7 @@ function openFoodModal(itemKey, imageSrc = '') {
     foodModalTags.innerHTML = detail.tags.map(tag => `<span>${tag}</span>`).join('');
     foodModalCalories.textContent = detail.calories;
     foodModalHeatTime.textContent = detail.heatTime;
+    foodModalNetWeight.textContent = detail.netWeight;
     foodModalDescription.textContent = detail.description;
     foodModalIngredients.innerHTML = detail.ingredients.map(item => `<li>${item}</li>`).join('');
     foodModalNutrition.innerHTML = detail.nutrition.map(item => `
