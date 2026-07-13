@@ -335,10 +335,10 @@ button:active {
 
 .hero-content p {
     font-size: var(--font-size-lg);
-    color: #2f221b;
+    color: #030303;
     font-weight: 600;
     margin-bottom: var(--spacing-lg);
-    max-width: 500px;
+    max-width: 800px;
     text-shadow: 0 1px 4px rgba(255, 250, 243, 0.7);
 }
 
@@ -1493,16 +1493,28 @@ body.food-modal-open {
         display: flex;
     }
 
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 0;
-        padding: var(--spacing-md) 0;
-    }
+   .nav-menu ul {
+    flex-direction: column;
+    gap: 0;
+    padding: var(--spacing-md) 0;
+    width: 100%;
+  }
 
-    .nav-menu a {
-        padding: var(--spacing-md) var(--spacing-lg);
-        border-bottom: 1px solid var(--bg-light);
-    }
+  .nav-menu ul li {
+    width: 100%;
+    display: block;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--bg-light);
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
     .hamburger-menu {
         display: flex;
@@ -1538,12 +1550,25 @@ body.food-modal-open {
     .carousel {
         min-height: auto;
         flex-wrap: wrap;
+        position: relative;
     }
 
     .carousel-btn {
         width: 40px;
         height: 40px;
         font-size: var(--font-size-base);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
     }
 
     .carousel-container {
