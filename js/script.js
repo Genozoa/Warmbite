@@ -7,6 +7,7 @@ const foodDetails = {
         image: 'public/product-1.png',
         title: 'Chicken Sopas',
         tags: ['Comforting', 'Creamy', 'Family-Friendly', 'Ready in 5 min'],
+        price: '₱52.76',
         calories: '420 cal',
         heatTime: '4 min',
         netWeight: '350g',
@@ -23,6 +24,7 @@ const foodDetails = {
         image: 'public/product-2.png',
         title: 'Champorado',
         tags: ['Breakfast', 'Creamy', 'Chocolatey', 'Ready in 4 min'],
+        price: '₱24.06',
         calories: '360 cal',
         heatTime: '3 min',
         netWeight: '300g',
@@ -39,6 +41,7 @@ const foodDetails = {
         image: 'public/product-3.png',
         title: 'Chicken Lugaw',
         tags: ['Soothing', 'Savory', 'Slow-Cooked', 'Ready in 5 min'],
+        price: '₱35.78',
         calories: '390 cal',
         heatTime: '4 min',
         netWeight: '350g',
@@ -55,6 +58,7 @@ const foodDetails = {
         image: 'public/product-4.png',
         title: 'Chicken Curry with Rice',
         tags: ['Warming', 'Hearty', 'Savory', 'Ready in 5 min'],
+        price: '₱54.36',
         calories: '510 cal',
         heatTime: '5 min',
         netWeight: '350g',
@@ -71,6 +75,7 @@ const foodDetails = {
         image: 'public/product-5.png',
         title: 'Beef Tapa with Garlic Rice',
         tags: ['Protein-Rich', 'Savory', 'Filling', 'Ready in 6 min'],
+        price: '₱60.26',
         calories: '560 cal',
         heatTime: '5 min',
         netWeight: '380g',
@@ -87,6 +92,7 @@ const foodDetails = {
         image: 'public/product-6.png',
         title: 'Chicken Afritada with Rice',
         tags: ['Tomato-Rich', 'Comforting', 'Family-Style', 'Ready in 5 min'],
+        price: '₱46.06',
         calories: '500 cal',
         heatTime: '5 min',
         netWeight: '380g',
@@ -103,6 +109,7 @@ const foodDetails = {
         image: 'public/product-7.png',
         title: 'Beef Mami Noodle Soup',
         tags: ['Warming', 'Savory', 'Hearty', 'Ready in 5 min'],
+        price: '₱66.79',
         calories: '480 cal',
         heatTime: '4 min',
         netWeight: '300g',
@@ -119,6 +126,7 @@ const foodDetails = {
         image: 'public/product-8.png',
         title: 'Pork Menudo with Rice',
         tags: ['Rich', 'Savory', 'Hearty', 'Ready in 5 min'],
+        price: '₱39.24',
         calories: '530 cal',
         heatTime: '5 min',
         netWeight: '350g',
@@ -135,6 +143,7 @@ const foodDetails = {
         image: 'public/product-9.png',
         title: 'Pork Adobo',
         tags: ['Classic', 'Savory', 'Garlicky', 'Ready in 5 min'],
+        price: '₱37.23',
         calories: '510 cal',
         heatTime: '4 min',
         netWeight: '350g',
@@ -151,6 +160,7 @@ const foodDetails = {
         image: 'public/product-10.png',
         title: 'Adobo with Rice',
         tags: ['Comforting', 'Savory', 'Filling', 'Ready in 5 min'],
+        price: '₱49.23',
         calories: '490 cal',
         heatTime: '4 min',
         netWeight: '400g',
@@ -172,6 +182,7 @@ const foodModalTags = document.getElementById('foodModalTags');
 const foodModalCalories = document.getElementById('foodModalCalories');
 const foodModalHeatTime = document.getElementById('foodModalHeatTime');
 const foodModalNetWeight = document.getElementById('foodModalNetWeight');
+const foodModalPrice = document.getElementById('foodModalPrice');
 const foodModalDescription = document.getElementById('foodModalDescription');
 const foodModalIngredients = document.getElementById('foodModalIngredients');
 const foodModalNutrition = document.getElementById('foodModalNutrition');
@@ -192,6 +203,7 @@ function openFoodModal(itemKey, imageSrc = '') {
     foodModalCalories.textContent = detail.calories;
     foodModalHeatTime.textContent = detail.heatTime;
     foodModalNetWeight.textContent = detail.netWeight;
+    foodModalPrice.textContent = detail.price;
     foodModalDescription.textContent = detail.description;
     foodModalIngredients.innerHTML = detail.ingredients.map(item => `<li>${item}</li>`).join('');
     foodModalNutrition.innerHTML = detail.nutrition.map(item => `
