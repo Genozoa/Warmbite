@@ -271,7 +271,7 @@ window.addEventListener('scroll', () => {
 
 // ===== CAROUSEL FUNCTIONALITY =====
 let currentSlide = 1;
-const totalSlides = 11;
+const totalSlides = 10;
 
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');

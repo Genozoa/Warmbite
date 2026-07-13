@@ -264,6 +264,49 @@ button:active {
     min-height: 600px;
 }
 
+.hero-with-bg,
+.hero-with-bg2 {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    box-shadow: var(--shadow-md);
+}
+
+.hero-with-bg {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.hero-with-bg2 {
+    min-height: 78vh;
+    padding: clamp(3rem, 8vw, 6rem) var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-with-bg::before,
+.hero-with-bg2::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+.hero-with-bg::before {
+    background-image: url("../public/bg-img.jpg");
+}
+
+.hero-with-bg2::before {
+    background-image: url("../public/pawe-bg.png");
+}
+
 .hero-content {
     flex: 1;
     animation: fadeInLeft 0.8s ease;
@@ -271,18 +314,23 @@ button:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 720px;
+    padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 .hero-content h1 {
-    color: var(--text-dark);
+    color: #1f140e;
     margin-bottom: var(--spacing-md);
+    text-shadow: 0 2px 8px rgba(255, 250, 243, 0.75);
 }
 
 .hero-content p {
     font-size: var(--font-size-lg);
-    color: var(--text-light);
+    color: #2f221b;
+    font-weight: 600;
     margin-bottom: var(--spacing-lg);
     max-width: 500px;
+    text-shadow: 0 1px 4px rgba(255, 250, 243, 0.7);
 }
 
 .hero-image {
@@ -340,6 +388,52 @@ button:active {
 .meals-page .hero-brand {
     width: 128px;
     height: 128px;
+}
+
+/* ===== QUOTE SECTION ===== */
+.quote-section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quote-card {   
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-light), rgba(249, 245, 240));
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.quote-image {
+    height: 100%;
+    min-height: 320px;
+}
+
+.quote-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quote-content {
+    padding: var(--spacing-xl);
+}
+
+.quote-content h2 {
+    text-align: left;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.quote-content p {
+    font-size: var(--font-size-lg);
+    color: var(--text-light);
+    margin-bottom: 0;
 }
 
 /* ===== AWARDS SECTION ===== */
