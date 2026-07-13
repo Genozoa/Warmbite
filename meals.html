@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Meals | WarmBite</title>
+    <meta name="description" content="Discover authentic Filipino self-heating meals. From Adobo to Tinola, all ready to eat in minutes.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a class="logo" href="index.html" aria-label="WarmBite Home">
+                <img src="public/w_logo.png" alt="WarmBite Logo">
+            </a>
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="meals.html">Our Meals</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <a class="header-cta" href="about-us.html#distribution">Find Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-showcase" id="meals">
+            <div class="hero-content">
+                <div class="hero-visual">
+                    <img class="hero-logo hero-logo-large" src="public/t_logo.png" alt="WarmBite logo">
+                </div>
+            </div>
+            <h2>Authentic Filipino Flavors, Ready to Eat</h2>
+            <p class="section-subtitle">Each meal is crafted with care, using quality ingredients and traditional recipes.</p>
+            <div class="carousel">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Previous meal"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel-container">
+                    <div class="carousel-slide active" id="slide1" data-item="product-1">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-1.jpg" alt="Garden Harvest Bowl">
+                                <span class="meal-tag">Fresh Pick</span>
+                                <span class="meal-label">Ready to Heat</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Garden Harvest Bowl</h3>
+                                <div class="meal-tags">
+                                    <span>veggie-forward</span>
+                                    <span>dairy-free</span>
+                                    <span>gluten-free friendly</span>
+                                </div>
+                                <p class="meal-serves">Best for lunch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide2" data-item="product-2">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-2.jpg" alt="Mediterranean Herb Plate">
+                                <span class="meal-label">Market Favorite</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Mediterranean Herb Plate</h3>
+                                <div class="meal-tags">
+                                    <span>high protein</span>
+                                    <span>paleo</span>
+                                    <span>soy-free</span>
+                                </div>
+                                <p class="meal-serves">Best for a quick lunch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide3" data-item="product-3">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-3.jpg" alt="Citrus Chicken Bento">
+                                <span class="meal-label">Market Favorite</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Citrus Chicken Bento</h3>
+                                <div class="meal-tags">
+                                    <span>fresh & vibrant</span>
+                                    <span>gluten-free friendly</span>
+                                    <span>dairy-free</span>
+                                </div>
+                                <p class="meal-serves">Best for breakfast or lunch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide4" data-item="product-4">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-4.jpg" alt="Roasted Veggie Box">
+                                <span class="meal-label">Fresh Pick</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Roasted Veggie Box</h3>
+                                <div class="meal-tags">
+                                    <span>plant-based</span>
+                                    <span>fiber-rich</span>
+                                    <span>ready in 8 min</span>
+                                </div>
+                                <p class="meal-serves">Best for dinner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide5" data-item="product-5">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-5.jpg" alt="Protein Power Bowl">
+                                <span class="meal-label">Protein Boost</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Protein Power Bowl</h3>
+                                <div class="meal-tags">
+                                    <span>high protein</span>
+                                    <span>carb-conscious</span>
+                                    <span>soy-free</span>
+                                </div>
+                                <p class="meal-serves">Best for a filling lunch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide6" data-item="product-6">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-6.jpg" alt="Fresh Greens Wrap">
+                                <span class="meal-label">Light & Fresh</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Fresh Greens Wrap</h3>
+                                <div class="meal-tags">
+                                    <span>light</span>
+                                    <span>gluten-free friendly</span>
+                                    <span>dairy-free</span>
+                                </div>
+                                <p class="meal-serves">Best for a quick bite</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide7" data-item="product-7">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-7.jpg" alt="Smoky Tomato Pasta">
+                                <span class="meal-label">Comfort Meal</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Smoky Tomato Pasta</h3>
+                                <div class="meal-tags">
+                                    <span>comfort food</span>
+                                    <span>family friendly</span>
+                                    <span>ready in 12 min</span>
+                                </div>
+                                <p class="meal-serves">Best for dinner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide8" data-item="product-8">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-8.jpg" alt="Creamy Mushroom Rice">
+                                <span class="meal-label">Cozy Favorite</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Creamy Mushroom Rice</h3>
+                                <div class="meal-tags">
+                                    <span>comforting</span>
+                                    <span>vegetarian</span>
+                                    <span>hearty</span>
+                                </div>
+                                <p class="meal-serves">Best for a cozy dinner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide9" data-item="product-9">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-9.jpg" alt="Crispy Chicken Salad">
+                                <span class="meal-label">Crunchy Pick</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Crispy Chicken Salad</h3>
+                                <div class="meal-tags">
+                                    <span>crisp</span>
+                                    <span>protein-rich</span>
+                                    <span>gluten-free friendly</span>
+                                </div>
+                                <p class="meal-serves">Best for lunch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide10" data-item="product-10">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-10.jpg" alt="Sunshine Quinoa Bowl">
+                                <span class="meal-label">Bright & Fresh</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Sunshine Quinoa Bowl</h3>
+                                <div class="meal-tags">
+                                    <span>nutrient-rich</span>
+                                    <span>plant-based</span>
+                                    <span>dairy-free</span>
+                                </div>
+                                <p class="meal-serves">Best for brunch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" id="slide11" data-item="product-11">
+                        <div class="meal-card">
+                            <div class="meal-image">
+                                <img src="public/product-11.jpg" alt="Balanced Bento Box">
+                                <span class="meal-label">Balanced Choice</span>
+                            </div>
+                            <div class="meal-info">
+                                <h3>Balanced Bento Box</h3>
+                                <div class="meal-tags">
+                                    <span>balanced</span>
+                                    <span>portable</span>
+                                    <span>ready to eat</span>
+                                </div>
+                                <p class="meal-serves">Best for on-the-go meals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Next meal"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+                <button class="indicator" data-slide="3"></button>
+                <button class="indicator" data-slide="4"></button>
+                <button class="indicator" data-slide="5"></button>
+                <button class="indicator" data-slide="6"></button>
+                <button class="indicator" data-slide="7"></button>
+                <button class="indicator" data-slide="8"></button>
+                <button class="indicator" data-slide="9"></button>
+                <button class="indicator" data-slide="10"></button>
+                <button class="indicator" data-slide="11"></button>
+            </div>
+        </section>
+
+        <section class="meal-types">
+            <h2>Meal Categories</h2>
+            <p class="section-subtitle">Choose by meal type or your preference</p>
+            <div class="meal-types-container">
+                <a class="meal-type-card" href="#breakfast-boxes">
+                    <div class="meal-type-image">
+                        <img src="public/breakfast.png" alt="Breakfast">
+                    </div>
+                    <h3>BREAKFAST</h3>
+                    <h4>Start Your Day Right</h4>
+                    <p>Lugaw, rice porridge, and traditional Filipino breakfast favorites.</p>
+                </a>
+                <a class="meal-type-card" href="#lunch-boxes">
+                    <div class="meal-type-image">
+                        <img src="public/lunch.png" alt="Lunch">
+                    </div>
+                    <h3>LUNCH</h3>
+                    <h4>Midday Energy</h4>
+                    <p>Hearty mains like Adobo, Menudo, and Nilaga for a satisfying lunch.</p>
+                </a>
+                <a class="meal-type-card" href="#dinner-boxes">
+                    <div class="meal-type-image">
+                        <img src="public/dinner.png" alt="Dinner">
+                    </div>
+                    <h3>DINNER</h3>
+                    <h4>Evening Comfort</h4>
+                    <p>Warm soups and stews perfect for winding down after a busy day.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="market">
+            <h2>WarmBite boxes for breakfast, lunch, and dinner</h2>
+            <p class="section-subtitle">Pick the right box for your routine and enjoy a satisfying meal anytime.</p>
+
+            <div class="market-category" id="breakfast-boxes">
+                <h3>Breakfast Boxes</h3>
+                <div class="market-items">
+                    <button class="market-item" type="button" data-item="product-1">
+                        <img src="public/product-1.jpg" alt="Garden Harvest Bowl">
+                        <span class="market-item-label">Garden Harvest Bowl</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-10">
+                        <img src="public/product-10.jpg" alt="Sunshine Quinoa Bowl">
+                        <span class="market-item-label">Sunshine Quinoa Bowl</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-11">
+                        <img src="public/product-11.jpg" alt="Balanced Bento Box">
+                        <span class="market-item-label">Balanced Bento Box</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="market-category" id="lunch-boxes">
+                <h3>Lunch Boxes</h3>
+                <div class="market-items">
+                    <button class="market-item" type="button" data-item="product-2">
+                        <img src="public/product-2.jpg" alt="Mediterranean Herb Plate">
+                        <span class="market-item-label">Mediterranean Herb Plate</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-5">
+                        <img src="public/product-5.jpg" alt="Protein Power Bowl">
+                        <span class="market-item-label">Protein Power Bowl</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-6">
+                        <img src="public/product-6.jpg" alt="Fresh Greens Wrap">
+                        <span class="market-item-label">Fresh Greens Wrap</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-9">
+                        <img src="public/product-9.jpg" alt="Crispy Chicken Salad">
+                        <span class="market-item-label">Crispy Chicken Salad</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="market-category" id="dinner-boxes">
+                <h3>Dinner Boxes</h3>
+                <div class="market-items">
+                    <button class="market-item" type="button" data-item="product-3">
+                        <img src="public/product-3.jpg" alt="Citrus Chicken Bento">
+                        <span class="market-item-label">Citrus Chicken Bento</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-4">
+                        <img src="public/product-4.jpg" alt="Roasted Veggie Box">
+                        <span class="market-item-label">Roasted Veggie Box</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-7">
+                        <img src="public/product-7.jpg" alt="Smoky Tomato Pasta">
+                        <span class="market-item-label">Smoky Tomato Pasta</span>
+                    </button>
+                    <button class="market-item" type="button" data-item="product-8">
+                        <img src="public/product-8.jpg" alt="Creamy Mushroom Rice">
+                        <span class="market-item-label">Creamy Mushroom Rice</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="food-modal" id="foodModal" aria-hidden="true">
+            <div class="food-modal-backdrop" data-close-modal></div>
+            <div class="food-modal-panel" role="dialog" aria-modal="true" aria-labelledby="foodModalTitle">
+                <button class="food-modal-close" id="foodModalClose" type="button" aria-label="Close detail panel">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="food-modal-content">
+                    <div class="food-modal-media">
+                        <img id="foodModalImage" src="" alt="Selected meal">
+                    </div>
+                    <div class="food-modal-body">
+                        <h3 id="foodModalTitle"></h3>
+                        <div class="food-modal-tags" id="foodModalTags"></div>
+                        <div class="food-modal-stats">
+                            <div>
+                                <span>Calories</span>
+                                <strong id="foodModalCalories"></strong>
+                            </div>
+                            <div>
+                                <span>Heating Time</span>
+                                <strong id="foodModalHeatTime"></strong>
+                            </div>
+                            <div>
+                                <span>Serving Size</span>
+                                <strong>1 Bento Box</strong>
+                            </div>
+                        </div>
+                        <div class="food-modal-section">
+                            <h4>Description</h4>
+                            <p id="foodModalDescription"></p>
+                        </div>
+                        <div class="food-modal-section">
+                            <h4>Ingredients in the Bento Box</h4>
+                            <ul id="foodModalIngredients"></ul>
+                        </div>
+                        <div class="food-modal-section">
+                            <h4>Nutrition per Serving</h4>
+                            <div class="food-modal-nutrition" id="foodModalNutrition"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="final-cta" style="margin-top: var(--spacing-2xl);">
+            <h2>Ready to Try WarmBite?</h2>
+            <p>Find WarmBite at your nearest school canteen, grocery store, or 7-Eleven.</p>
+            <a class="cta-button primary large" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Find Near You</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WarmBite</h4>
+                <p>Authentic Filipino meals that heat themselves.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="meals.html">Our Meals</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><a href="mailto:gilbertcrismundodaytic@gmail.com">gilbertcrismundodaytic@gmail.com</a></p>
+                <p><a href="tel:+09051438718">+(63) 905-143-8718</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1DQscRMXWC/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/albert49084618?t=O8S-RNwnXE3uOqNDTpcXng&s=09" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/tenchavezmary?igsh=MXJqaHZmdDhjNGV5dg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 WarmBite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
